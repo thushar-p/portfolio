@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person_play" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Thushar P - Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TSR</div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="#skills" class="nav-link" data-page="skills"><i class="fa-solid fa-brain"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-page="projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-page="experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a href="#resume" class="nav-link" data-page="resume"><i class="fa-solid fa-file-alt"></i> Resume</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <div class="theme-toggle" id="themeToggle"></div>
+            <div class="hamburger-menu" id="hamburgerMenu">☰</div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-header">
+            <div class="logo">TSR</div>
+            <div class="close-btn" id="mobileMenuClose">×</div>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#skills" class="nav-link" data-page="skills"><i class="fa-solid fa-brain"></i> Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-page="projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+            <li><a href="#experience" class="nav-link" data-page="experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+            <li><a href="#contact" class="nav-link" data-page="contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            <li><a href="#resume" class="nav-link" data-page="resume"><i class="fa-solid fa-file-alt"></i> Resume</a></li>
+            <li>
+                <button class="menu-item-toggle" id="mobileThemeToggle">
+                    <span>Light Theme</span>
+                    <div class="theme-toggle" id="mobileThemeToggleSwitch"></div>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Home Page -->
+    <main class="page active" id="home">
+        <div class="main-content">
+            <div class="content-left">
+                <h1 class="main-title">Hi🖐🏽 I'm Thushar,</h1>
+                <p class="description">
+                    I specialize in building efficient, scalable, and secure backend systems. With over a year of experience, I’ve worked on production-grade applications, designed system architectures, optimized performance bottlenecks, and improved database operations. I enjoy turning complex problems into clean, reliable code and shipping solutions that scale.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/thushar-p" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/thushar-p" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/thushxr" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://threads.net/@thushxr" target="_blank" class="social-icon" aria-label="Thread"><i class="fa-brands fa-threads"></i></a>
+                    <a href="mailto:thushar8p@gmail.com?subject=Hello&body=I saw your portfolio..." target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+            <div class="skills-carousel">
+                <button class="carousel-nav" aria-label="Previous Skill">‹</button>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="/placeholder.svg" alt="" class="skill-logo-home">
+                    </div>
+                    <div class="skill-name"></div>
+                </div>
+                <button class="carousel-nav" aria-label="Next Skill">›</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skills Page -->
+    <main class="page" id="skills">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Skills</h1>
+                <div class="page-search-container">
+                    <input type="text" class="page-search-input" placeholder="Search..." id="skillsSearch">
+                </div>
+            </div>
+            <div id="skills-content">
+                <!-- Skills will be dynamically loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Projects Page -->
+    <main class="page" id="projects">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Projects</h1>
+                <div class="page-search-container">
+                    <input type="text" class="page-search-input" placeholder="Search..." id="projectsSearch">
+                </div>
+                <!-- <div class="filter-tags" id="projectFilterTags"> -->
+                    <!-- Filter tags will be dynamically loaded here by JavaScript -->
+                <!-- </div> -->
+            </div>
+            <div class="timeline-container" id="projectsTimeline">
+                <!-- Projects will be dynamically loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Experience Page -->
+    <main class="page" id="experience">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Experience</h1>
+                <div class="page-search-container">
+                    <input type="text" class="page-search-input" placeholder="Search..." id="experienceSearch">
+                </div>
+            </div>
+            <div class="timeline-container" id="experienceTimeline">
+                <!-- Experiences will be dynamically loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Page -->
+    <main class="page" id="contact">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Contact</h1>
+                <div class="contact-intro">
+                    <p>Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+                </div>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">Full Name *</label>
+                        <input type="text" id="firstName" name="firstName" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Hi, I am John Doe, a software engineer..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Send Message
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Resume Page -->
+    <main class="page" id="resume">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Resume</h1>
+            </div>
+            <div class="resume-download">
+                <p class="resume-message">
+                    Click the button below to download my resume.
+                </p>
+                <a href="/assets/Thushar.pdf" download class="resume-button">
+                    <i class="fa-solid fa-file-pdf"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span id="modalClose" class="modal-close" aria-label="Close modal">×</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-description"></p>
+            <div class="modal-details"></div>
+            <div class="modal-tags"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
